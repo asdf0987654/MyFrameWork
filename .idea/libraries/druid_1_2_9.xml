@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="druid-1.2.9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../KFlanguage/javaWeb/apache-maven-3.8.5/maven-repository/ymx/dbsource/druid-1.2.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--<!DOCTYPE mapper PUBLIC ""-->
+<!--        "com.dtd.mapper.dtd">-->
+
+<mapper namespace="users">
+    <select id="selectAll" resultType="com.bean.User">
+        select * from users
+    </select>
+
+    <select id="selectByName" resultType="com.bean.User">
+        select * from users where u_name = {name}
+    </select>
+</mapper>
+
+        <!--<mapper namespace="">-->
+<!--&lt;!&ndash;-->
+<!--    namespace:必填选项，代表该文件内所有sql语句的命名空间-->
+<!--    id : 必填选项，为指定的sql添加一个id号-->
+<!--    resultType:选填 ，当查询记录需要封装为bean的实例时指定类的全限定名称-->
+<!--        比如: java.util.HashMap    com.bean.User   当该sql只查询单个数据(整数|浮点数)可以不用填写-->
+<!--    keyName: 选填 当前返回结果为map时指定某个字段为key-->
+<!--    ?: sql中的占位符，在调用该语句后需要通过外部程序注入占位符值-->
+<!--&ndash;&gt;-->
+<!--    <select id="" resultType="" keyName="">-->
+<!--        select * from users where u_name = ?-->
+<!--    </select>-->
+
+<!--    <delete id="">-->
+<!--        delete form users where u_name = ?-->
+<!--    </delete>-->
+
+<!--    <insert id="">-->
+<!--        insert into users(值1,值2...)-->
+<!--    </insert>-->
+
+<!--    <update id="">-->
+<!--        update set 字段1 = ? , 字段2 = ? where u_name = ?-->
+<!--    </update>-->
+<!--</mapper>-->

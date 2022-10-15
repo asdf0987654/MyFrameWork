@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sql>
+    <configuration>
+        <password>数据库密码</password>
+        <username>数据库用户名</username>
+        <driver>Driver</driver>
+        <url>数据库连接地址</url>
+<!--        <connection_max_active>数据库连接池最大连接数量</connection_max_active>-->
+<!--        <connection_initial_size>数据库连接池初始化连接数量</connection_initial_size>-->
+<!--        <connection_wait_time>物理连接最大的空闲时间</connection_wait_time>-->
+    </configuration>
+<!--    如果选择使用BaseMapper接口此配置可选，改配置只针对session操作-->
+<!--    <mappers>-->
+<!--        <mapper resource="存放sql语句的配置文件路径"/>-->
+<!--    </mappers>-->
+
+</sql>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT sql (configuration,mappers)>
+        <!ELEMENT driver (#PCDATA)>
+        <!ELEMENT url (#PCDATA)>
+        <!ELEMENT username (#PCDATA)>
+        <!ELEMENT password (#PCDATA)>
+        <!ELEMENT connection_max_active (#PCDATA)>
+        <!ELEMENT connection_initial_size (#PCDATA)>
+        <!ELEMENT connection_wait_time (#PCDATA)>
+        <!ELEMENT configuration (driver|url|username|password|
+                connection_max_active|connection_initial_size|connection_max_active)+>
+        <!ELEMENT mapper EMPTY>
+        <!ATTLIST mapper resource CDATA #IMPLIED>
+        <!ELEMENT mappers (mapper)+>
